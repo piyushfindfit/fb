@@ -50,7 +50,7 @@
 		
 		// getting basic user info
 		function getInfo() { 
-			FB.api('/"me"', 'GET', {fields: 'first_name,last_name,name,id,gender,birthday'}, function(response) {
+			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id,gender,birthday'}, function(response) {
 				document.getElementById('status').innerHTML = JSON.stringify(response);
 			});
 		}
